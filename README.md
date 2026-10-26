@@ -16,3 +16,4 @@ Agregué una función para mostrar un mensaje en pantalla si la API falla o si n
 
  Una reflexión sobre qué aprendieron utilizando IA
 Aprendí a usar la IA como un apoyo para resolver dudas puntuales de lógica (como `fetch` y `localStorage`), pero entendiendo qué hace cada parte del código para poder modificarlo y corregir los errores que la IA llega a cometer.
+
