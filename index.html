@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Rick and Morty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Explorador de Rick and Morty</h1>
+        <p>Práctica interactiva con API pública</p>
+    </header>
 
+    <main>
+        <!-- Sección de Buscador y Filtros -->
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Buscar personaje por nombre...">
+            <select id="statusFilter">
+                <option value="">Todos los estados</option>
+                <option value="alive">Vivo (Alive)</option>
+                <option value="dead">Muerto (Dead)</option>
+                <option value="unknown">Desconocido (Unknown)</option>
+            </select>
+        </section>
+
+        <!-- Mensajes de estado / error -->
+        <div id="messageContainer" class="message hidden"></div>
+
+        <!-- Contenedor principal de personajes -->
+        <section class="content-wrapper">
+            <div id="charactersContainer" class="grid-container"></div>
+            
+            <!-- Sección de Favoritos -->
+            <aside class="favorites-sidebar">
+                <h2>Mis Favoritos ⭐</h2>
+                <div id="favoritesContainer" class="favorites-list"></div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
